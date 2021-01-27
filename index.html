@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1000</title>
+  <style>
+
+    @font-face {
+    font-family: 'Y_Spotlight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/Y_Spotlight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: 'Y_Spotlight';
+    }
+
+    .logobar {
+      width: 100%;
+      height: 150px;
+      text-align: center;
+      line-height: 150px;
+    }
+
+    #logo {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .navbar {
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+    }
+
+    #menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+    }
+
+    #menu li{
+      font-size: 20px;
+      color: #6A6966;
+      float: left;
+      margin: 0 30px;
+    }
+
+    #menu li:hover {
+      color: #FFE080;
+    }
+
+    .contents {
+      width: 80%;
+      height: 1340px;
+      margin: 20px 10%;
+      background-color: purple;
+    }
+
+    .col {
+      float: left;
+    }
+
+    .header {
+      width: 100%;
+      height: 400px;
+      background-color: yellow;
+    }
+
+    .letter-link {
+      width: 50%;
+      height: 420px;
+      background-color: yellowgreen;
+    }
+
+    .info {
+      width: 50%;
+      height: 420px;
+      background-color: lightyellow;
+    }
+
+    .img1 {
+      width: 60%;
+      height: 420px;
+      background-color: maroon;
+    }
+
+    .img2 {
+      width: 40%;
+      height: 420px;
+      background-color: darkorange;
+    }
+
+    .lastment {
+      width: 100%;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      background-color: white;
+    }
+
+    .lastment p {
+      margin: 0;
+      font-size: 30px;
+      color: #6A6966;
+    }
+
+    @media (max-width: 480px) {
+      #menu li {
+        font-size: 15px;
+        margin: 0 20px;
+      }
+
+      .contents {
+        height: 900px;
+      }
+
+      .header {
+        height: 300px;
+      }
+
+      .letter-link {
+        width: 100%;
+        height: 200px;
+      }
+
+      .info {
+        width: 100%;
+        height: 150px;
+      }
+
+      .img1, .img2 {
+        height: 150px;
+      }
+
+      .lastment p {
+        font-size: 20px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="logobar">
+    <a href="#"><img src="https://user-images.githubusercontent.com/77374852/106024941-9b1f8200-610b-11eb-99a9-2f4098fca012.png" id="logo" width="300"></a>
+  </div>
+  <div class="navbar">
+    <ul id="menu">
+      <a href="#"><li>2018</li></a>
+      <a href="#"><li>2019</li></a>
+      <a href="#"><li>2020</li></a>
+      <a href="#"><li>2021</li></a>
+    </ul>
+  </div>
+  <div class="contents">
+    <div class="header col"></div>
+    <div class="letter-link col"></div>
+    <div class="info col"></div>
+    <div class="img1 col"></div>
+    <div class="img2 col"></div>
+    <div class="lastment col">
+      <p>2021.01.30</p>
+    </div>
+  </div>
+</body>
+</html>
