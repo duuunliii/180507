@@ -52,7 +52,7 @@
     }
 
     #menu li:hover {
-      color: #FFE080;
+      color: #ffeaae;
     }
 
     .contents {
@@ -69,31 +69,68 @@
     .header {
       width: 100%;
       height: 400px;
-      background-color: yellow;
+      background-color: white;
+      background-image: url("https://user-images.githubusercontent.com/77374852/106152783-2e66bf00-61c1-11eb-8ed8-b8ee29f141ff.jpg");
+      background-size: 75% 120%;
+      background-position: top center;
+      background-repeat: no-repeat;
     }
 
     .letter-link {
       width: 50%;
       height: 420px;
-      background-color: yellowgreen;
+      line-height: 420px;
+      background-color:#ffeaae;
+      text-align: center;
     }
 
-    .info {
-      width: 50%;
-      height: 420px;
-      background-color: lightyellow;
+    .letter-link h4 {
+      display: inline-block;
+      font-size: 30px;
+      margin : 0 auto;
+      padding: 0;
+      color: #6A6966;
+      text-decoration: none;
+    }
+
+    .letter-link h4:hover {
+      color: white;
     }
 
     .img1 {
-      width: 60%;
+      width: 50%;
       height: 420px;
-      background-color: maroon;
+      background-color: lightyellow;
+      background-image: url("https://user-images.githubusercontent.com/77374852/106152793-30308280-61c1-11eb-9dd1-16ed7f723d36.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
     }
 
     .img2 {
+      width: 60%;
+      height: 420px;
+      background-color: maroon;
+      background-image: url("https://user-images.githubusercontent.com/77374852/106152790-2eff5580-61c1-11eb-9505-14c044f936f3.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    .img3 {
       width: 40%;
       height: 420px;
-      background-color: darkorange;
+      line-height: 420px;
+      background-color:#ffeaae;
+      text-align: center;
+    }
+
+    #img3info {
+      line-height: normal;
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 25px;
+      color: #6A6966;
     }
 
     .lastment {
@@ -110,32 +147,47 @@
       color: #6A6966;
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 768px) {
       #menu li {
         font-size: 15px;
         margin: 0 20px;
       }
 
       .contents {
-        height: 900px;
+        height: 800px;
       }
 
       .header {
-        height: 300px;
+        height: 200px;
+        background-size: 100% 200px;
       }
 
       .letter-link {
         width: 100%;
         height: 200px;
+        line-height: 200px;
       }
 
-      .info {
+      .letter-link h4 {
+        font-size: 20px;
+      }
+
+      .img1 {
         width: 100%;
         height: 150px;
       }
 
-      .img1, .img2 {
+      .img2 {
         height: 150px;
+      }
+
+      .img3 {
+        height: 150px;
+        line-height: 150px;
+      }
+
+      #img3info {
+        font-size: 11px;
       }
 
       .lastment p {
@@ -159,10 +211,17 @@
   </div>
   <div class="contents">
     <div class="header col"></div>
-    <div class="letter-link col"></div>
-    <div class="info col"></div>
+    <div class="letter-link col">
+      <a href="#"><h4>1000일 편지 클릭</h4></a>
+    </div>
     <div class="img1 col"></div>
     <div class="img2 col"></div>
+    <div class="img3 col">
+      <div id="img3info">
+        <p>세짱아 나 진짜</p>
+        <p>열심히 만들었다. . .</p>
+      </div>
+    </div>
     <div class="lastment col">
       <p>2021.01.30</p>
     </div>
