@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1000</title>
+  <style>
+    @font-face {
+      font-family: 'UhBeeSe_hyun';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeSe_hyun.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    * {
+      font-family: 'UhBeeSe_hyun';
+      box-sizing: border-box;
+    }
+
+    .logobar {
+      width: 100%;
+      height: 150px;
+      text-align: center;
+      line-height: 150px;
+    }
+
+    #logo {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .navbar {
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+    }
+
+    #menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+    }
+
+    #menu li{
+      font-size: 20px;
+      color: #6A6966;
+      float: left;
+      margin: 0 30px;
+    }
+
+    #menu li:hover {
+      color: #ffeaae;
+    }
+
+    .contents {
+      width: 80%;
+      height: 2200px;
+      margin: 20px 10%;
+      background-color: white;
+    }
+
+    .col {
+      float: left;
+      margin: 50px 0;
+    }
+
+    .header {
+      width: 100%;
+      height: 400px;
+      line-height: 400px;
+      background-image: url("https://user-images.githubusercontent.com/77374852/106168710-f156f880-61d1-11eb-8cb0-1d766ead515c.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      text-align: center;
+    }
+
+    .header h4 {
+      font-size: 50px;
+      color: white;
+      margin: 0;
+    }
+
+    .info {
+      width: 100%;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      background-color: white;
+    }
+
+    .info p {
+      font-size: 30px;
+      margin: 0;
+      color: #6A6966;
+    }
+
+    .img1 {
+      width: 40%;
+      height: 400px;
+      background-image: url("https://user-images.githubusercontent.com/77374852/106168797-09c71300-61d2-11eb-9d10-23ae618389e9.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    .img1info {
+      width: 60%;
+      height: 400px;
+      line-height: 400px;
+      text-align: center;
+      background-color: white;
+    }
+
+    .img1info p {
+      font-size: 30px;
+      margin: 0;
+      color: #6A6966;
+    }
+
+    .img2info {
+      width: 20%;
+      height: 400px;
+      line-height: 400px;
+      text-align: center;
+      background-color: white;
+    }
+
+    .img2info p {
+      font-size: 30px;
+      margin: 0;
+      color: #6A6966;
+    }
+
+    .img2 {
+      width: 40%;
+      height: 400px;
+      background-image: url("https://user-images.githubusercontent.com/77374852/106168809-0b90d680-61d2-11eb-813e-e9e3217d09b6.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    .img3 {
+      width: 40%;
+      height: 400px;
+      background-image: url("https://user-images.githubusercontent.com/77374852/106168814-0cc20380-61d2-11eb-88d3-af3b4b151f4f.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    .img4 {
+      width: 33%;
+      height: 400px;
+      background-image: url("https://user-images.githubusercontent.com/77374852/106168817-0df33080-61d2-11eb-9472-9fd7af57df77.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+
+    .img5 {
+      width: 33%;
+      height: 400px;
+      background-image: url("https://user-images.githubusercontent.com/77374852/106168820-0e8bc700-61d2-11eb-86b6-ef9358a6fe04.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+
+    .img4info {
+      width: 34%;
+      height: 400px;
+      line-height: 400px;
+      text-align: center;
+      background-color: white;
+    }
+
+    .img4info p {
+      line-height: normal;
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 30px;
+      margin: 0;
+      color: #6A6966;
+    }
+
+    .img6 {
+      width: 30%;
+      height: 400px;
+      background-image: url("https://user-images.githubusercontent.com/77374852/106168823-0fbcf400-61d2-11eb-9dff-f1fb12e93647.JPG");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+
+    .img6info {
+      width: 70%;
+      height: 400px;
+      line-height: 400px;
+      text-align: center;
+      background-color: white;
+    }
+
+    .img6info p {
+      line-height: normal;
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 30px;
+      margin: 0;
+      color: #6A6966;
+    }
+
+    #clearall {
+      clear: left;
+    }
+
+    .img7 {
+      margin: 70px auto;
+      width: 70%;
+      height: 500px;
+      line-height: 500px;
+      background-image: url("https://user-images.githubusercontent.com/77374852/106168827-10558a80-61d2-11eb-8c9f-fcf6838c6700.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      text-align: center;
+    }
+
+    .img7 p {
+      font-size: 30px;
+      margin: 0;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      #menu li {
+        font-size: 15px;
+        margin: 0 20px;
+      }
+
+      .contents {
+        height: 1080px;
+      }
+
+      .header {
+        height: 250px;
+        line-height: 250px;
+      }
+
+      .header h4 {
+        font-size: 35px;
+      }
+
+      .info {
+        height: 80px;
+        line-height: 80px;
+      }
+
+      .img1, .img2, .img3, .img4, .img5, .img6, .img7 {
+        height: 200px;
+      }
+
+      .img1info, .img2info, .img4info, .img6info, .img7 {
+        height: 200px;
+        line-height: 200px;
+      }
+
+      .info p, .img1info p, .img2info p, .img4info p, .img6info p, .img7 p {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="logobar">
+    <a href="index.html"><img src="https://user-images.githubusercontent.com/77374852/106024941-9b1f8200-610b-11eb-99a9-2f4098fca012.png" id="logo" width="300"></a>
+  </div>
+  <div class="navbar">
+    <ul id="menu">
+      <a href="2018.html"><li>2018</li></a>
+      <a href="2019.html"><li>2019</li></a>
+      <a href="2020.html"><li>2020</li></a>
+      <a href="2021.html"><li>2021</li></a>
+    </ul>
+  </div>
+  <div class="contents">
+    <div class="header col">
+      <h4>2020</h4>
+    </div>
+    <div class="info col">
+      <p>정말 많은 변화가 있었던 해</p>
+    </div>
+
+    <div class="img1 col"></div>
+    <div class="img1info col">
+      <p>맨날 안산에서 뒹굴뒹굴</p>
+    </div>
+
+    <div class="img2info col">
+      <p>2주년</p>
+    </div>
+    <div class="img2 col"></div>
+    <div class="img3 col"></div>
+
+    <div class="img4 col"></div>
+    <div class="img5 col"></div>
+    <div class="img4info col">
+      <p>부산 갔다가 비 쫄딱 ㅋ..</p>
+    </div>
+    <div class="img6 col"></div>
+    <div class="img6info col">
+      <p>그래도 부산에서 사진도 찍고!</p>
+    </div>
+    <div id="clearall"></div>
+    <div class="img7">
+      <p>그렇게 그는 떠났다...</p>
+    </div>
+  </div>
+</body>
+</html>
