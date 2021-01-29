@@ -54,6 +54,10 @@
       color: #ffeaae;
     }
 
+    #menu #selected {
+      color: #ffeaae;
+    }
+
     .contents {
       width: 80%;
       height: 2200px;
@@ -184,8 +188,8 @@
 
     @media (max-width: 768px) {
       #menu li {
-        font-size: 15px;
-        margin: 0 20px;
+        font-size: 12px;
+        margin: 0 15px;
       }
 
       .contents {
@@ -207,10 +211,6 @@
         line-height: 80px;
       }
 
-      .info p {
-        font-size: 12px;
-      }
-
       .img1 {
         width: 30%;
         height: 200px;
@@ -222,38 +222,15 @@
         line-height: 200px;
       }
 
-      .img1info p {
-        font-size: 12px;
-      }
-
-      .img2info {
-        width: 60%;
-        height: 150px;
-        line-height: 150px;
-      }
-
-      .img2info p {
-        font-size: 12px;
-      }
-
-      .img2 {
+      .img2, .img3 {
         width: 40%;
         height: 150px;
       }
 
-      .img3 {
-        width: 40%;
-        height: 150px;
-      }
-
-      .img3info {
+      .img2info, .img3info {
         width: 60%;
         height: 150px;
         line-height: 150px;
-      }
-
-      .img3info p {
-        font-size: 12px;
       }
 
       .img4 {
@@ -261,10 +238,9 @@
         line-height: 250px;
       }
 
-      .img4 p {
+      .info p, .img1info p, .img2info p, .img3info p, .img4 p{
         font-size: 12px;
       }
-
     }
   </style>
 </head>
@@ -274,8 +250,9 @@
   </div>
   <div class="navbar">
     <ul id="menu">
+      <a href="index.html"><li>Home</li></a>
       <a href="2018.html"><li>2018</li></a>
-      <a href="2019.html"><li>2019</li></a>
+      <a href="2019.html"><li id="selected">2019</li></a>
       <a href="2020.html"><li>2020</li></a>
       <a href="2021.html"><li>2021</li></a>
     </ul>
@@ -300,7 +277,7 @@
       <p>근데 또 쓰러진 세혁이</p>
     </div>
     <div class="img4 col">
-      <p>걱정없이 잼나게 놀기 바빴던 2019년 끝~!</p>
+      <p>걱정없이 잼나게 놀기 바빴던 2019년~!</p>
     </div>
   </div>
 </body>
