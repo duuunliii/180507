@@ -54,9 +54,13 @@
       color: #ffeaae;
     }
 
+    #menu #selected {
+      color: #ffeaae;
+    }
+
     .contents {
       width: 80%;
-      height: 2200px;
+      height: 3300px;
       margin: 20px 10%;
       background-color: white;
     }
@@ -237,12 +241,12 @@
 
     @media (max-width: 768px) {
       #menu li {
-        font-size: 15px;
-        margin: 0 20px;
+        font-size: 12px;
+        margin: 0 15px;
       }
 
       .contents {
-        height: 1080px;
+        height: 2030px;
       }
 
       .header {
@@ -280,9 +284,10 @@
   </div>
   <div class="navbar">
     <ul id="menu">
+      <a href="index.html"><li>Home</li></a>
       <a href="2018.html"><li>2018</li></a>
       <a href="2019.html"><li>2019</li></a>
-      <a href="2020.html"><li>2020</li></a>
+      <a href="2020.html"><li id="selected">2020</li></a>
       <a href="2021.html"><li>2021</li></a>
     </ul>
   </div>
