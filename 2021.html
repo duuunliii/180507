@@ -54,6 +54,10 @@
       color: #ffeaae;
     }
 
+    #menu #selected {
+      color: #ffeaae;
+    }
+
     .contents {
       width: 80%;
       height: 2200px;
@@ -63,16 +67,38 @@
 
     .col {
       float: left;
+      margin: 50px 0;
+    }
+
+    .header {
+      width: 100%;
+      height: 400px;
+      background-image: url("https://user-images.githubusercontent.com/77374852/106283041-bf529e80-6284-11eb-8184-326051b6f165.JPG");
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
+    .info {
+      width: 100%;
+      height: 200px;
+      text-align: center;
+      color: #6A6966;
+      font-size: 30px;
     }
 
     @media (max-width: 768px) {
       #menu li {
-        font-size: 15px;
-        margin: 0 20px;
+        font-size: 12px;
+        margin: 0 15px;
       }
 
       .contents {
         height: 1080px;
+      }
+
+      .info {
+        font-size: 20px;
       }
     }
   </style>
@@ -83,14 +109,18 @@
   </div>
   <div class="navbar">
     <ul id="menu">
+      <a href="index.html"><li>Home</li></a>
       <a href="2018.html"><li>2018</li></a>
       <a href="2019.html"><li>2019</li></a>
       <a href="2020.html"><li>2020</li></a>
-      <a href="2021.html"><li>2021</li></a>
+      <a href="2021.html"><li id="selected">2021</li></a>
     </ul>
   </div>
   <div class="contents">
-
+    <div class="header col"></div>
+    <div class="info col">
+      <h3>아직...못만났어요...<br>앞으로 채워나가자!</h3>
+    </div>
   </div>
 </body>
 </html>
